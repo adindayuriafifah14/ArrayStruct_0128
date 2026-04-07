@@ -24,5 +24,5 @@ int main()
     cout << "data tampil" << endl;
     cout << "nama : " << mhs.alamat << endl;
     cout << "alamat : " << mhs.alamat <<endl;
-    cout << "umur : " << mhs.umur << endl;
+    cout << "umur : " << mhs.umur << endl; 
 }
