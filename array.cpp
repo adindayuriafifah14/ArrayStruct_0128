@@ -35,6 +35,22 @@ int main(){
     cout << endl;
 
     cout << "input array menggunakan for" << endl;
+    //mengisi data melalui perulangan
+    for (int i = 0; i <= 4; i++)
+    {
+        cout << "isikan data ke-" << (i + 1) << " : ";
+        cin >> datamu [i];
+    }
+    cout << endl;
+
+    cout << "tampilkan data array menggunakan for" << endl;
+    //menampilkan data dengan perulangan
+    for (int i = 0; i <= 4; i++)
+    {
+        cout << "data ke-" << (i + 1) << " : " <<datamu [1] << endl;
+    }
+}
+
 
     
 
