@@ -1,28 +1,46 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-struct Orang
+struct detailAlamat
+{
+    string desa;
+    string kota;
+};
+
+struct orang
 {
     string nama;
-    string alamat;
+    detailAlamat alamat;
     int umur;
 };
 
 int main()
 {
-    //deklarasi variabel struct
-    Orang mhs;
-    //mengisi data
-    cout << "isikan data nama : " ;
-    cin >> mhs.nama;
-    cout << "isikan data alamat : ";
-    cin >> mhs.alamat;
-    cout << "isikan data umur : ";
-    cin >> mhs.umur;
-    cout << endl;
+    // deklarasi variable struct
+    orang mhs[3];
 
-    cout << "data tampil" << endl;
-    cout << "nama : " << mhs.alamat << endl;
-    cout << "alamat : " << mhs.alamat <<endl;
-    cout << "umur : " << mhs.umur << endl; 
+    // mengisi data
+    for (int i = 0; i <= 2; i++)
+    {cout << "Isikan data nama : ";
+    getline(cin, mhs[i].nama);
+    cout << "Isikan data desa : ";
+    getline(cin, mhs[i].alamat.desa);
+    cout << "Isikan data kota : ";
+    getline(cin, mhs[i].alamat.kota);
+    cout << "Isikan data umur : ";
+    cin >> mhs[i].umur;
+    cin.ignore();
+    cout << endl;
+}
+
+    for (int i = 0; i <= 2; i++)
+    {
+    cout <<"Data Orang" << endl;
+    cout << "Nama : " << mhs[i].nama << endl;
+    cout << "Kota : " << mhs[i].alamat.kota << endl;
+    cout << "Desa : " << mhs[i].alamat.desa << endl;
+    cout << "Umur : " << mhs[i].umur << endl;
+    cout << endl;
+    }
 }
