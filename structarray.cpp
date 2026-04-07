@@ -9,3 +9,7 @@ struct Orang
 };
 
 int main()
+{
+    //deklarasi variabel struct
+    Orang mhs;
+}
